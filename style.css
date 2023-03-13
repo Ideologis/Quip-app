@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;;
+}
+img{
+    width:100%;
+}
+/* Start here */
+.container{
+    max-width: 900px;
+    margin:0 auto;
+    padding:0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.quiz-box{
+    width:600px;
+    margin:0 auto;
+    background-color: #F8D4BA;
+    padding: 1rem 5rem 5rem 5rem;
+    border: 3px solid palevioletred;
+    border-radius:5px;
+}
+.quiz-box h1{
+    background-color: #C34F5A;
+    font-size: 4rem;
+    text-align: center;
+    color:#D69F3A;
+    padding:1rem 0;
+    width:100%;
+    margin-bottom: 2rem;
+    border-radius:3px;
+}
+.quiz-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz-header #progress{
+    color:#541412;
+    font-size: 3rem;
+    font-weight:700;
+}
+.quiz-header #count-down{
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: orangered;
+    padding: 5px;
+    margin:10px;
+    color: white;
+    border-radius: 3px;
+}
+.quiz-box #question{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color:orangered;
+    border-width: 1px 0;
+    text-align: center;
+    padding: 5px;
+    /* border:1px solid #777; */
+    border-radius: 10px;
+
+}
+.buttons{
+    margin:1.5rem 0 4rem 0;
+}
+.btn{
+    text-align: left;
+    background-color: #ddd;
+    width:100%;
+    font-size:1.8rem;
+    color:black;
+    border:1px solid lightcyan;
+    border-radius: 5px;
+    margin:7px 0;
+    padding:1rem;
+    outline:none;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: #F7F4EF;
+    color:#541412;
+}
+.btn:active{
+    color:darkcyan;
+}
+#score{
+    color:black;
+    text-align:center;
+    font-size:2rem;
+    margin-bottom: 4rem;
+}
+.quiz-repeat{
+    text-align: center;
+    margin: 0 auto;
+}
+.quiz-repeat a{
+    font-size: 1.6rem;
+    font-weight:600;
+    color:#fff;
+    text-decoration: none;
+    background-color: orange;
+    padding: 1rem;
+    border-radius:5px;
+    transition: all .3s;
+}
+.quiz-repeat a:hover{
+    background-color: orangered;
+}
+@media (max-width: 375px) {
+
+  
+  .quiz-box{
+    padding:0rem 2rem 2rem 2rem;
+  }
+  .quiz-box h1{
+    font-size: 2rem;
+  }
+  .quiz-header #progress{
+    font-size: 1.5rem;
+  }
+  .buttons{
+    margin: auto;
+  }
+}
